@@ -1,0 +1,91 @@
+.cart {
+  position: relative;
+
+  button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+
+  &-icon {
+    width: 1.5em;
+    cursor: pointer;
+  }
+
+  &-count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .75rem;
+    font-weight: 700;
+    color: $white;
+    
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 1em;
+    height: 1em;
+    padding: .85em;
+    border-radius: 50%;
+    background-color: $orange;
+  }
+
+  &-items {
+    z-index: 99;
+    position: absolute;
+    width: 22em;
+    left: -15em;
+    top: 3em;
+    background-color: $white;
+    padding: 1em;
+    padding-top: 0;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    &-checkout {
+      background-color: $orange !important;
+      color: $white;
+      font-weight: 700;
+      width: 100%;
+      padding: 1em;
+      margin-top: 1em;
+      border-radius: 1em;
+    }
+
+    &-empty {
+      font-weight: 700;
+      color: $dark-grayish-blue;
+      text-align: center;
+
+      padding-block: 3em;
+    }
+
+    &-head {
+      font-weight: 700;
+      padding-block: 1em;
+      margin-bottom: 1em;
+      border-bottom: 1px solid $grayish-blue;
+    }
+
+    &-icon {
+      width: 3em;
+      border-radius: 0.25em;
+    }
+
+    &-all {
+      display: flex;
+      gap: 1em;
+      color: $dark-grayish-blue;
+
+      p span {
+        color: $very-dark-blue;
+        font-weight: 700;
+      }
+    }
+
+    &-desc {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

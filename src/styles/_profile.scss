@@ -1,0 +1,9 @@
+.profile-icon {
+  width: 3em;
+  cursor: pointer;
+  
+  &:hover {
+    outline: 1px solid $orange;
+    border-radius: 50%;
+  }
+}
